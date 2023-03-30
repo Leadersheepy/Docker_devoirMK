@@ -8,11 +8,11 @@ RUN apt-get update
 RUN apt-get install -y nginx
 
 # ajout de mon dossier 
-ADD ./ /var/www/html/
+ADD src/ /var/www/html/
 
 
 # Exposer le port 80 pour la page web
-EXPOSE 8000
+EXPOSE 80
 
 # Builder mon application
 CMD [ "/usr/sbin/nginx", "-g", "daemon off;" ]
@@ -22,3 +22,4 @@ CMD [ "/usr/sbin/nginx", "-g", "daemon off;" ]
 #docker build -t devoir_mk
 #devoir_mk     latest    782e0677fb65   18 seconds ago   179MB
 #docker run --name monSite -d -p 8000:8000 devoir_mk
+#eed8803c16da   devoir_mk   "/usr/sbin/nginx -g …"   2 minutes ago   Created             monSite
