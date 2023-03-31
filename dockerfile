@@ -21,5 +21,5 @@ CMD [ "/usr/sbin/nginx", "-g", "daemon off;" ]
 ###COMMANDE POUR LA PREMIERE PARTIE###
 #docker build -t devoir_mk
 #devoir_mk     latest    782e0677fb65   18 seconds ago   179MB
-#docker run --name monSite -d -p 8000:8000 devoir_mk
+#docker run --name monSite -d -p 8000:80 devoir_mk
 #eed8803c16da   devoir_mk   "/usr/sbin/nginx -g …"   2 minutes ago   Created             monSite
