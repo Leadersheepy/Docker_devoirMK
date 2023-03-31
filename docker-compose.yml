@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - ./devoir_mk:/usr/share/nginx/html
