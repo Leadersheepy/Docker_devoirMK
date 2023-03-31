@@ -22,7 +22,6 @@ jobs:
       uses: docker/login-action@v1
       with:
         username: ${{ secrets.marinouh }}
-        password: ${{ secrets.DockerRoyal*6 }}
 
     - name: Build Docker image
       uses: docker/build-push-action@v2
