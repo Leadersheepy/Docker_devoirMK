@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>Web application </title>
@@ -21,8 +21,35 @@
 
     <img src="poro.gif" class="rounded mx-auto d-block"/>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+ 
+  <div class="text-center">
+    <button id="poroButton" class="btn btn-primary">Afficher Poro</button>
+</div>
+
+<div id="poroGif" class="text-center" style="display: none;">
+    <img src="petitporo.gif" class="rounded mx-auto d-block w-25"/>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+var isPoroShown = false;
+
+$('#poroButton').click(function() {
+    if (isPoroShown) {
+        $('#poroGif').hide();
+        isPoroShown = false;
+        $('#poroButton').text('Afficher Poro');
+    } else {
+        $('#poroGif').show();
+        isPoroShown = true;
+        $('#poroButton').text('Masquer Poro');
+    }
+});
+</script>
 </body>
 </html>
