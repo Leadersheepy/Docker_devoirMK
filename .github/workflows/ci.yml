@@ -36,7 +36,7 @@ jobs:
       run: echo "Youpi le test unitaire fonctionne !"
 
     - name: Test uni second
-    run: |
+      run: |
       if grep -q "<button.*>.*</button>" index.html; then
         echo "Il y a bien un bouton !"
         exit 0
