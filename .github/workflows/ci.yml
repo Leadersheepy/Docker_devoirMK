@@ -32,10 +32,10 @@ jobs:
         push: true
         tags: marinouh/devoir_mk:latest
 
-    - name: Test uni 1
+    - name: Test uni premier
       run: echo "Youpi le test unitaire fonctionne !"
 
-    - name: Test uni 2
+    - name: Test uni second
     run: |
       if grep -q "<button.*>.*</button>" index.html; then
         echo "Il y a bien un bouton !"
