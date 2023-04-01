@@ -37,13 +37,13 @@ jobs:
 
     - name: Test uni second
       run: |
-      if grep -q "<button.*>.*</button>" index.html; then
-        echo "Il y a bien un bouton !"
-        exit 0
-      else
-        echo "Raté"
-        exit 1
-      fi
+        if grep -q "<button.*>.*</button>" index.html; then
+          echo "Il y a bien un bouton !"
+          exit 0
+        else
+          echo "Raté"
+          exit 1
+        fi
 
 
 
