@@ -32,8 +32,19 @@ jobs:
         push: true
         tags: marinouh/devoir_mk:latest
 
-    - name: unit test
+    - name: Test uni 1
       run: echo "Youpi le test unitaire fonctionne !"
+
+    - name: Test uni 2
+    run: |
+      if grep -q "<button.*>.*</button>" index.html; then
+        echo "Il y a bien un bouton !"
+        exit 0
+      else
+        echo "Raté"
+        exit 1
+      fi
+
 
 
 
