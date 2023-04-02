@@ -18,7 +18,7 @@ COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
 # ajout de mon dossier 
-ADD src/ /var/www/html/
+ADD templates/ /var/www/html/
 ADD App/ /App
 
 
