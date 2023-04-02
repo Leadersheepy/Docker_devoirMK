@@ -64,7 +64,7 @@ Bonne lecture !
 
 `docker run --name monSite -d -p 8000:80 --network="devoirdockernet" devoir_mk`
 
-***Voir si la connexion est bien faites***
+***Voir si la connexion est bien faite***
 `docker network inspect devoirdockernet`
 
 ```
