@@ -20,7 +20,7 @@ Ce qui fait que l'on a :
 
 ***Construction de l'image et run***
 
-`docker build -t devoir_mk`
+`docker build -t devoir_mk .`
 
 `docker run --name monSite -d -p 8000:80 devoir_mk`
 
