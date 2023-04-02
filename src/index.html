@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Web application </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,7 +20,7 @@
         <footer class="blockquote-footer">Wiki <cite title="Source Title">League Of Legend</cite></footer>
       </blockquote>
 
-    <img src="poro.gif" class="rounded mx-auto d-block"/>
+    <img src="img/poro.gif" class="rounded mx-auto d-block"/>
   </div>
 
  
@@ -28,9 +29,26 @@
 </div>
 
 <div id="poroGif" class="text-center" style="display: none;">
-    <img src="petitporo.gif" class="rounded mx-auto d-block w-25"/>
+    <img src="img/petitporo.gif" class="rounded mx-auto d-block w-25"/>
 </div>
 </div>
+
+
+<div id="data"></div>
+
+    <script>
+      fetch('http://localhost:3000/data')
+        .then(response => response.json())
+        .then(data => {
+          const dataDiv = document.getElementById('data');
+          dataDiv.innerHTML = JSON.stringify(data);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    </script>
+    
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
