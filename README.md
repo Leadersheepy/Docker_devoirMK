@@ -18,8 +18,6 @@ Ce qui fait que l'on a :
 
 ----
 
-# Partie 1 - construction manuelle de l'image
-
 ***Construction de l'image et run***
 
 `docker build -t devoir_mk`
