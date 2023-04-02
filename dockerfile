@@ -15,7 +15,9 @@ ADD src/ /var/www/html/
 
 
 #Se connecter à la base de donnée postgres
-ENV PGHOST=postgres
+ENV POSTGRES_HOST=some-postgres
+ENV POSTGRES_DB=postgres
+ENV POSTGRES_USER=postgres
 ENV PGPORT=5432
 ENV PGPASSWORD=mysecretpassword
 
