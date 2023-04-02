@@ -1,5 +1,9 @@
+#Ce fichier est utilisé pour le test gihub action 
+
+#Je lui donne un nom
 name: Integration
 
+#On précise la branche sur lequel il va faire le test
 on: 
   push:
     branches:
@@ -8,6 +12,7 @@ on:
     branches:
       - main
 
+#le nom du test et les étapes qu'il va faire
 jobs:
   test-website:
     runs-on: ubuntu-latest
@@ -20,18 +25,20 @@ jobs:
 
     - name: Login to Docker Hub
       uses: docker/login-action@v1
+      #ici on met en secret l'username et le mot de passe grâce à une fonction github
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-
+    #Buil de le docker
     - name: Build Docker image
       uses: docker/build-push-action@v2
       with:
         context: .
         push: true
         tags: marinouh/devoir_mk:latest
-
+    
+    # 2 tests pour montrer que les tests unitaires fonctionnent
     - name: Test uni premier
       run: echo "Youpi le test unitaire fonctionne !"
 

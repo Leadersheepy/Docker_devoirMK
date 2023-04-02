@@ -7,3 +7,5 @@ services:
       - "8000:80"
     volumes:
       - ./devoir_mk:/usr/share/nginx/html
+
+#Docker compose serre à facilement orchestrer des applications multi-conteneurs
