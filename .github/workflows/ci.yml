@@ -3,10 +3,10 @@ name: Integration
 on: 
   push:
     branches:
-      - main
+      - SecondProjetRéussi
   pull_request:
     branches:
-      - main
+      - SecondProjetRéussi
 
 jobs:
   test-website:
