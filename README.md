@@ -96,3 +96,7 @@ Ce qui fait que l'on a :
 `docker exec -it some-postgres sh`
 
 
+***Docker desktop***
+![image](https://user-images.githubusercontent.com/43178189/229358419-fff1e2f5-371d-4051-9bdc-9f334a335d22.png)
+
+
