@@ -14,8 +14,8 @@ TABLE_NAME = 'mytable'
 postgres_host = os.environ.get('POSTGRES_HOST', 'localhost')
 postgres_port = os.environ.get('POSTGRES_PORT', '5432')
 postgres_db = os.environ.get('POSTGRES_DB', 'postgres')
-postgres_user = os.environ.get('POSTGRES_USER', 'postgres')
-postgres_password = os.environ.get('POSTGRES_PASSWORD', 'mysecretpassword')
+postgres_user = os.environ.get('POSTGRES_USER', 'myuser')
+postgres_password = os.environ.get('POSTGRES_PASSWORD', 'mypassword')
 
 # Create a SQLAlchemy engine to connect to PostgreSQL
 engine = create_engine(
@@ -26,9 +26,9 @@ table = Table(TABLE_NAME, metadata, autoload_with=engine)
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="App/static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
-templates = Jinja2Templates(directory="App/static/templates")
+templates = Jinja2Templates(directory="static/templates")
 
 
 @app.get("/", response_class=HTMLResponse)
