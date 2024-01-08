@@ -4,18 +4,6 @@
  
  #### Voici le devoir docker à rendre, vous trouverez dans ce readme des informations concernant la réalisation du projet.
  
- 
- 
- :warning: Avant de continuer :warning: -------------------------------------------------------------------------------------------------------------
- 
- ***J'ai fait les 3 parties, mais je n'ai pas réussi à faire la dernière étape de la partie 3 (la connexion a été faite, mais je n'arrive pas à faire afficher les données de mon contenaire avec postgre dans mon contenaire avec la page HTML) Cependant grâce à une aide exterieur, la partie où je bloquais a été faites. Toutefois vu que cela ne vient pas de moi, j'ai préféré vous le mettre dans une autre branche.***
- 
-Ce qui fait que l'on a :
-
--Main branche : Mon devoir, mais avec une partie 3 3/4 terminée.
-
--Second banche : Mon devoir + l'aide de quelqu'un, mais la partie 3 est entièrement faite.
-
 Bonne lecture !
 
 ----
