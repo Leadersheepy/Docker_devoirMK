@@ -19,6 +19,8 @@ Ce qui fait que l'on a :
 Bonne lecture !
 
 ----
+***Schema architecture***
+![image](https://github.com/Leadersheepy/Docker_devoirMK/assets/43178189/1df03f4c-f13a-4a8a-9e26-e490ec55ffa5)
 
 ***Construction de l'image et run***
 
