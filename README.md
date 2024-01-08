@@ -91,6 +91,13 @@ Bonne lecture !
 ![image](https://github.com/Leadersheepy/Docker_devoirMK/assets/43178189/a63aa49c-3f3d-4d9d-a3c1-cdd60cebdc35)
 ![image](https://github.com/Leadersheepy/Docker_devoirMK/assets/43178189/ee546f03-c5d8-4979-8c8a-b5fd894673be)
 
+***Projet image***
+![image](https://github.com/Leadersheepy/Docker_devoirMK/assets/43178189/560a1b6f-b357-41eb-b9fc-ba1869be7d35)
+![image](https://github.com/Leadersheepy/Docker_devoirMK/assets/43178189/fd940862-3a88-41f1-a6f3-f968cd6a2041)
+
+*** Swagger ***
+![image](https://github.com/Leadersheepy/Docker_devoirMK/assets/43178189/e8e660c7-0f0c-4c7a-9e39-df1f2fd1caf9)
+
 
 ***Docker desktop***
 ![image](https://user-images.githubusercontent.com/43178189/229358419-fff1e2f5-371d-4051-9bdc-9f334a335d22.png)
