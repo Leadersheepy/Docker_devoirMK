@@ -87,6 +87,9 @@ Bonne lecture !
 
 `docker exec -it some-postgres sh`
 
+***Test du projet***
+![image](https://github.com/Leadersheepy/Docker_devoirMK/assets/43178189/a63aa49c-3f3d-4d9d-a3c1-cdd60cebdc35)
+
 
 ***Docker desktop***
 ![image](https://user-images.githubusercontent.com/43178189/229358419-fff1e2f5-371d-4051-9bdc-9f334a335d22.png)
